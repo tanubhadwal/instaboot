@@ -1,5 +1,5 @@
 #.....................ALL FILES ARE IMPORTED HERE................
-from like_user_post import like_user_post
+from like_user_post import *
 from comment_a_Post import comment_user_post
 from get_user_post import get_user_post
 from get_own_post import get_own_post
@@ -9,8 +9,10 @@ import get_comment_post
 from delete_a_bad_comment import delete_negative_comment
 from colorama import init
 from colorama import Fore,Back,Style
-init()
+
 from trending import get_trending_tag_counts
+from natural_climate import natural_calamities
+from graph import graph_objs_tools
 
 #.....................STARTING MENU BAR......................
 show_menu = True
@@ -31,7 +33,7 @@ while show_menu:
         if menu_choice == 1:
             insta_username = raw_input(Fore.RED+Style.BRIGHT+"Enter Username.........\n")
             print(Fore.GREEN+Style.BRIGHT+"Wait liking Ur POst......")
-            like_user_post(insta_username)
+            like_a_post(insta_username)
             print(Style.RESET_ALL)
             print("\n")
             print("\n")

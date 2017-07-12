@@ -3,7 +3,7 @@ from constants import BASE_URL,APP_ACCESS_TOKEN
 from get_comment_post import comment_user_post
 from get_user_post import get_user_post
 from colorama import *
-init()
+
 
 
 def delete_a_comment(insta_username):

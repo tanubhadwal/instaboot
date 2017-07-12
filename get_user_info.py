@@ -2,7 +2,6 @@ import requests
 from constants import *
 from get_user_id import *
 from colorama import *
-init()
 
 
 def get_user_info(insta_username):

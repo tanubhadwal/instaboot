@@ -3,7 +3,7 @@ import requests
 from constants import APP_ACCESS_TOKEN ,BASE_URL
 from get_user_post import get_user_post
 from colorama import *
-init()
+
 from textblob import TextBlob
 from textblob.sentiments import NaiveBayesAnalyzer
 
