@@ -30,17 +30,4 @@ def get_trending_tag_counts(tag):
         print(Fore.RED+Style.BRIGHT+'not successful')
 
 #get_trending_tag_counts(tag="love")
-    if get_a_trend['meta']['code'] == 200:
-        print(Fore.CYAN+Style.BRIGHT+"Here is your tag...natural\n")
-        print(Fore.GREEN+Style.BRIGHT+">>> "+str(get_a_trend['data']['media_count'])+" <<<")
-        plt.plot(get_a_trend['data']['media_count'], 'ro')
-        plt.axis()
-        plt.ylabel('Trending----->')
-        plt.xlabel("Insta-Bot")
-        plt.title("TRENDING GRAPH")
-        #plt._auto_draw_if_interactive()
-        plt.show()
-        print (Style.RESET_ALL)
-        return (get_a_trend['data']['media_count'])
-    else:
-        print(Fore.RED+Style.BRIGHT+'not successful')
+  

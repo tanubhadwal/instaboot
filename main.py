@@ -9,7 +9,7 @@ import get_comment_post
 from delete_a_bad_comment import delete_negative_comment
 from colorama import init
 from colorama import Fore,Back,Style
-from plotly.graph_objs import graph_objs_tools
+import matplotlib.pyplot as plt
 
 from trending import get_trending_tag_counts
 from natural_climate import natural_calamities
@@ -107,7 +107,7 @@ while show_menu:
         elif menu_choice == 10:
             insta_username = raw_input(Fore.RED + Style.BRIGHT + "Enter Username.........\n")
             print(Fore.GREEN + Style.BRIGHT + "wait work under process.......")
-            natural_calamities(insta_username)
+            natural_calamities()(insta_username)
             print (Style.RESET_ALL)
             print("\n")
             print("\n")
