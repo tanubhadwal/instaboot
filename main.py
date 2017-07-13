@@ -107,7 +107,7 @@ while show_menu:
         elif menu_choice == 10:
             insta_username = raw_input(Fore.RED + Style.BRIGHT + "Enter Username.........\n")
             print(Fore.GREEN + Style.BRIGHT + "wait work under process.......")
-            natural_calamities()(insta_username)
+            natural_calamities()
             print (Style.RESET_ALL)
             print("\n")
             print("\n")
