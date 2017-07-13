@@ -30,4 +30,3 @@ def get_trending_tag_counts(tag):
         print(Fore.RED+Style.BRIGHT+'not successful')
 
 #get_trending_tag_counts(tag="love")
-  
