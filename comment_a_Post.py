@@ -1,8 +1,8 @@
 import requests
 from constants import APP_ACCESS_TOKEN ,BASE_URL
 from get_user_post import get_user_post
-from colorama import *
-init()
+from colorama import Fore,Style
+
 
 def comment_user_post(insta_username):
     media_id = get_user_post(insta_username)

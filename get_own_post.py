@@ -1,7 +1,7 @@
 import requests
-from constants import *
+from constants import APP_ACCESS_TOKEN,BASE_URL
 import urllib
-from colorama import *
+from colorama import Fore,Style
 from PIL import Image
 
 

@@ -4,11 +4,11 @@ import urllib
 
 from constants import BASE_URL, APP_ACCESS_TOKEN
 from get_user_id import get_user_id
-from get_user_post import get_user_post,get_user_post_id
+from get_user_post import get_user_post,get_user_id
 
 def like_a_post(insta_username):
 
-  media_id = get_user_post_id(insta_username)
+  media_id = get_user_id(insta_username)
 
   # print media_id
 

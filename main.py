@@ -7,10 +7,11 @@ from get_user_info import get_user_info
 from delete_a_comment import delete_a_comment
 import get_comment_post
 from delete_a_bad_comment import delete_negative_comment
-from colorama import init
+from colorama import Style,Fore
 from colorama import Fore,Back,Style
 import matplotlib.pyplot as plt
-
+from get_post_id import  get_post_id
+from get_user_post import get_user_post
 from trending import get_trending_tag_counts
 from natural_climate import natural_calamities
 from graph import graph_objs_tools
@@ -58,8 +59,7 @@ while show_menu:
         elif menu_choice == 4:
             insta_username = raw_input(Fore.RED+Style.BRIGHT+"Enter Username.........\n")
             print(Fore.GREEN+Style.BRIGHT+"Wait Downloading user post......")
-            get_user_post(insta_username)
-            print get_user_post.user_id['data'][0['id']]
+            get_user_id(insta_username)
             print 'Your image has been downloaded!....to.....C:\Users\DELL\PycharmProjects\instabot\\'
             print (Style.RESET_ALL)
             print("\n")

@@ -1,7 +1,7 @@
 import requests
-from constants import *
-from get_user_id import *
-from colorama import *
+from constants import APP_ACCESS_TOKEN,BASE_URL
+from get_user_id import get_user_id
+from colorama import Fore,Style
 
 
 def get_user_info(insta_username):
