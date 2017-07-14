@@ -2,19 +2,19 @@ import requests
 
 from global_variable import ACCESS_TOKEN,BASE_URL
 
-calamities = ['earthquake','landslide','volcanic_erruption','flood','tsunami','cyclone','storms','droughts']
+calamities = ['earthquake','landslide','volcanic_erruption','flood','tsunami','cyclone','storms','droughts','heavy rain']
 
 # 31.0377824&lng=76.6900991
 
 def natural_calamities():
 
-  lat,long = raw_input("Enter Latitude and Longitude seperated by a space: ").split()
+    lat,long = raw_input("Enter Latitude and Longitude seperated by a space: ").split()
 
-  url = "%s/locations/search?lat=%s&lng=%s&access_token=%s"%(BASE_URL,lat,long,ACCESS_TOKEN)
+    url = "%s/locations/search?lat=%s&lng=%s&access_token=%s"%(BASE_URL,lat,long,ACCESS_TOKEN)
+    response = requests.get(url).json()
+    return response
 
-  response = requests.get(url).json()
 
-  return response
 
 def get_location_post():
 
@@ -49,7 +49,7 @@ def get_location_post():
                                 print "Post with id " + posts['id'] +" has \"" + calamity + "\" in caption."
 
           else:
-            print "hello"
+            # print "No posts found in this area....."
             pass
 
 # get_location_post()562

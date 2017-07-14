@@ -23,4 +23,4 @@ def like_a_post(insta_username):
   else:
     print "Unable to like post"
 
-like_a_post('muskaansehgal1996')
+# like_a_post('muskaansehgal1996')

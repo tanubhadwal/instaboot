@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 from get_post_id import  get_post_id
 from get_user_post import get_user_post
 from trending import get_trending_tag_counts
-from natural_climate import natural_calamities
+from natural_climate import natural_calamities, get_location_post
 from graph import graph_objs_tools
 
 #.....................STARTING MENU BAR......................
@@ -107,7 +107,7 @@ while show_menu:
         elif menu_choice == 10:
             insta_username = raw_input(Fore.RED + Style.BRIGHT + "Enter Username.........\n")
             print(Fore.GREEN + Style.BRIGHT + "wait work under process.......")
-            natural_calamities()
+            get_location_post()
             print (Style.RESET_ALL)
             print("\n")
             print("\n")
